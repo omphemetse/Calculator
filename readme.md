@@ -1,3 +1,38 @@
+## Usage
+
+Clone the repository to your local directory and follow the instructions below.
+
+```
+Install composer packages
+
+$ composer install
+
+```
+
+```
+Run project with command below and the project should be accessible with this url http://127.0.0.1:8000 to show that the server is running.
+
+$ php artisan serve
+```
+
+```
+Run unit tests with the command below
+
+$ ./vendor/bin/phpunit
+
+```
+
+```
+Use curl to make API calls
+
+
+$ curl -d '{"expression": "2+(3-1)*3"}' -H "Content-Type: application/json" -X POST http://localhost:8000/api/calculates
+$ curl -d '{"expression": "(2-0)(6/2)"}' -H "Content-Type: application/json" -X POST http://localhost:8000/api/calculates
+$ curl -d '{"expression": "6*(4/2)+3*1"}' -H "Content-Type: application/json" -X POST http://localhost:8000/api/calculates
+$ curl -d '{"expression": "6/3-1"}' -H "Content-Type: application/json" -X POST http://localhost:8000/api/calculates
+
+```
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
